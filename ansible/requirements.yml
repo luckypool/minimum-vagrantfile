@@ -1,0 +1,22 @@
+---
+# file: requirements.yml
+
+# https://galaxy.ansible.com/geerlingguy/git/
+- src: geerlingguy.git
+  name: git
+
+# https://galaxy.ansible.com/geerlingguy/ntp/
+- src: geerlingguy.ntp
+  name: ntp
+
+# https://galaxy.ansible.com/geerlingguy/nginx/
+- src: geerlingguy.nginx
+  name: nginx
+
+# https://galaxy.ansible.com/pcextreme/mariadb/
+- src: pcextreme.mariadb
+  name: mariadb
+
+# https://galaxy.ansible.com/zzet/rbenv/
+- src: zzet.rbenv
+  name: rbenv
