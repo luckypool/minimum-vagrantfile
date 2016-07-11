@@ -18,6 +18,7 @@ ansible-galaxy install -r ansible/requirements.yml
 ```
 
 - すると `ansible/roles/*` にインストールされる
+- 何が入ってるかは [ansible/requirements.yml](ansible/requirements.yml) を参照
 
 #### 2) vagrant up
 
@@ -28,6 +29,9 @@ vagrant provision
 
 - `ubunty/trusty64` な box イメージに
 - `ansible/vagrant.yml` が playbook が適応される
+- role毎の vars に関しては下記を参照
+  - [ansible/group_vars/all.yml](ansible/group_vars/all.yml)
+  - [ansible/vagrant.yml](ansible/vagrant.yml)
 
 #### 3) ログイン
 
@@ -39,7 +43,7 @@ vagrant ssh
 
 ### その他
 
-box イメージを毎回作るのが面倒な場合
+ex.) box イメージを毎回作るのが面倒な場合
 
 ```
 vagrant package
