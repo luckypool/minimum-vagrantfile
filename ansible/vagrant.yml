@@ -12,8 +12,16 @@
         - ntp.nict.jp iburst
       ntp_timezone: Asia/Tokyo
     - role: nginx
+    - role: memcached
     - role: mariadb
       mysql_secure_installation: true
     - role: rbenv
       rbenv_users:
         - vagrant
+    - role: dotfiles
+      dotfiles_repo: "https://github.com/luckypool/dotfiles"
+      dotfiles_repo_local_destination: "~/.dotfiles"
+      dotfiles_files: []
+    - role: zsh
+      prezto_enabled: yes
+      zsh_users: [vagrant]

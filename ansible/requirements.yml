@@ -9,6 +9,10 @@
 - src: geerlingguy.ntp
   name: ntp
 
+# https://galaxy.ansible.com/geerlingguy/memcached/
+- src: geerlingguy.memcached
+  name: memcached
+
 # https://galaxy.ansible.com/geerlingguy/nginx/
 - src: geerlingguy.nginx
   name: nginx
@@ -20,3 +24,11 @@
 # https://galaxy.ansible.com/zzet/rbenv/
 - src: zzet.rbenv
   name: rbenv
+
+# https://galaxy.ansible.com/geerlingguy/dotfiles/
+- src: geerlingguy.dotfiles
+  name: dotfiles
+
+# https://galaxy.ansible.com/luckypool/zsh/
+- src: luckypool.zsh
+  name: zsh
